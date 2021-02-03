@@ -1,7 +1,15 @@
-echo "# jquery.linkIt" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin git@github.com:AdilHussain167/jquery.linkIt.git
-git push -u origin main
+/*
+    * name: LinkIt
+    * author: Adil Hussain
+    * version: 0.1.0
+    * license: MIT
+*/
+
+(function($){
+    $.fn.linkIt = function() {
+        alert(this.html()); 
+        // mtlb jis pa laga ya plugin us ka ander ka html 
+        // ap $(this) asa use nh krta plugin ma
+    }
+}(jQuery));
+
